@@ -838,7 +838,7 @@ uis.controller('uiSelectCtrl',
           }
           var paddingRightString = window.getComputedStyle(container, null).getPropertyValue('padding-right');
           var containerPaddingRight = parseInt(paddingRightString, 10);
-          var inputWidth = containerWidth - input.offsetLeft - containerPaddingRight;
+          var inputWidth = containerWidth - input.offsetLeft - containerPaddingRight - 1;
           if (inputWidth < 50) inputWidth = containerWidth;
           ctrl.searchInput.css('width', inputWidth+'px');
           return true;
